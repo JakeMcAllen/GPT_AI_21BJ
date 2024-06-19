@@ -1,3 +1,3 @@
-env\Scripts\activate
+start cmd /k env\Scripts\activate
 call jupyter lab
-echo ciao
+
