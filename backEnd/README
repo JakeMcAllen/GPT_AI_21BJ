@@ -3,9 +3,15 @@ flask --app main run --debug
 
 
 
-# Flask
+# For create embedding
+cd .\utility\
+python .\generate_embeddings.py 
+
+
+
+
+# Tutorials
+## Flask
 https://www.youtube.com/watch?v=kENidSltTuA&list=PLS1QulWo1RIYbSv5_R2I_QbAcvbyqBCun&index=1
-
-
-# Agent
+## Agent
 https://www.youtube.com/watch?v=aTqDvi39yQg

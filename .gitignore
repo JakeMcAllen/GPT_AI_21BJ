@@ -7,3 +7,5 @@ save/
 cks/
 testThread.ipynb
 test_RLHF.ipynb
+
+backEnd/utility/chroma_db_nccn/

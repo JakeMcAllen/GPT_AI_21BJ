@@ -1,1 +1,0 @@
-GEMEINI_API_KEY = "AIzaSyCFhiseeAtrOTwRc3Ib0-h4vqFha7KLgPM"
