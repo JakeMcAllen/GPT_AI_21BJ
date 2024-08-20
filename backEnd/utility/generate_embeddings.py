@@ -4,8 +4,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 
 # CAN BE LOAD multiple pdfs
-loaders = [PyPDFLoader('./PDFs/Blockchain.pdf')]
-
+loaders = [PyPDFLoader('./PDFs/Blockchain.pdf'), PyPDFLoader('./PDFs/Cryptocurrency.pdf'), PyPDFLoader('./PDFs/Non-fungible_token.pdf')]
 docs = []
 
 for file in loaders:
