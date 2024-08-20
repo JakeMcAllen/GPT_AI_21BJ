@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 
+from utility.rag import rutine_response, ai_response
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -12,8 +14,9 @@ def login():
     if (content_type == 'application/json'):
         json = request.get_json()
         # Call AI
-        response = json["name"]
-        
+        # response = rutine_response(json["query"])                      # AI made for TESI
+        response = ai_response(json["query"])                          # External ai
+
         # Create json for output
         data = {'response': response}
         # Send output
