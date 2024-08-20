@@ -1,3 +1,4 @@
+cd .\backEnd\
 flask --app main run --debug
 
 
