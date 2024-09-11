@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import render_template
 
-from ai.Agent import agent_routine
+from Agent import agent_routine
 
 
 app = Flask(__name__)
