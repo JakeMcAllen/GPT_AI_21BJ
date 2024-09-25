@@ -10,7 +10,7 @@ from backEnd.ai.rag import get_relevant_context_from_db, generate_prompt
 from NSP import run_model, reasume_base_data
 
 nltk.download('wordnet')
-GEMINI_API_KEY = "AIzaSyCFhiseeAtrOTwRc3Ib0-h4vqFha7KLgPM"
+GEMINI_API_KEY = "AIzaSyDZESc6GNMa_U6GT3kABaR9JVLpeMmuGCc"
 MODE_Model=1
 m = None
 device = 'cpu'
