@@ -8,7 +8,7 @@ import google.generativeai as genai
 from rag import get_relevant_context_from_db, generate_prompt
 
 nltk.download('wordnet')
-GEMINI_API_KEY = "AIzaSyCFhiseeAtrOTwRc3Ib0-h4vqFha7KLgPM"
+GEMINI_API_KEY = "AIzaSyDZESc6GNMa_U6GT3kABaR9JVLpeMmuGCc"
 
 
 

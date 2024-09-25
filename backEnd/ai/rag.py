@@ -9,7 +9,6 @@ from langchain_community.embeddings import HuggingFaceHubEmbeddings
 
 
 
-GEMEINI_API_KEY = "AIzaSyCFhiseeAtrOTwRc3Ib0-h4vqFha7KLgPM"
 HUGGINFACE_TOKEN = "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"
 
 extraInputInfo =  """You are a bot that makes recommendations for activities. You answer in very short sentences and do not include extra information. \n
