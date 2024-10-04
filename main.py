@@ -1,11 +1,14 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+from flask_cors import CORS, cross_origin
 
 from Agent import agent_routine
 
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route("/")
@@ -14,6 +17,7 @@ def hello_world():
 
 
 @app.route("/agent", methods=["POST"])
+@cross_origin()
 def AgentCall():
     print("In !!!")
     jsn = request.get_json()
@@ -25,6 +29,7 @@ def AgentCall():
         print(jsn['keyWords'][0])
 
         response = agent_routine(jsn["query"], jsn['keyWords'][0], mode=0)
+        print(f"Response: {response}")
 
         return {"status": "true", "response": response}, 201
 
